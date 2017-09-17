@@ -1,0 +1,17 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Acme\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Acme\\": "tests"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^5.7",
+        "infection/infection": "^0.5.3",
+        "humbug/humbug": "^1.0@alpha"
+    }
+}
