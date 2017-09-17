@@ -34,6 +34,17 @@ class CounterTest extends TestCase
         Assert::assertGreaterThan($initialCount, $newCount);
     }
 
+    function test_it_counts_ten(): void
+    {
+        $initialCount = $this->counter->getCount();
+
+        $this->counter->count(10);
+
+        $newCount = $this->counter->getCount();
+
+        Assert::assertGreaterThan($initialCount, $newCount);
+    }
+
     function test_it_does_not_count_number_below_ten(): void
     {
         $initialCount = $this->counter->getCount();
